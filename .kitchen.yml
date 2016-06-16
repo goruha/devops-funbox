@@ -1,0 +1,17 @@
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: default
+    driver:
+      box: ervin/devops-box
+      username: "vagrant"
+      password: "vagrant"
+
+suites:
+  - name: devops-test
+    run_list:
+      - role[devops]

@@ -14,4 +14,12 @@ Vagrant.configure(2) do |config|
 
   config.vm.hostname = "renderedtext"
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
+  config.vm.provision "chef_solo" do |chef|
+    chef.install            = false
+    chef.cookbooks_path     = "cookbooks"
+    chef.roles_path         = "roles"
+    chef.add_role("devops")
+  end
+
 end

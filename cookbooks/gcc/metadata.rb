@@ -1,0 +1,7 @@
+name             'gcc'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures cookbooks/echo-is-everything'
+long_description 'Installs/Configures cookbooks/echo-is-everything'
+version          '0.1.0'
